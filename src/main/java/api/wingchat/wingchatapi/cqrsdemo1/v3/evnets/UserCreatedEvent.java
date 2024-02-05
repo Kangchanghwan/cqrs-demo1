@@ -1,0 +1,16 @@
+package api.wingchat.wingchatapi.cqrsdemo1.v3.evnets;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+@Data
+@AllArgsConstructor
+@EqualsAndHashCode(callSuper = false)
+public class UserCreatedEvent extends Event {
+
+    private String userId;
+    private String firstName;
+    private String lastName;
+
+}
